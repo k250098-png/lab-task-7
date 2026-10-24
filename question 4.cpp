@@ -18,7 +18,7 @@ int getMax(int arr[], int n) {
 }
 
 void countSortBinary(int arr[], int n, int bit_pos, int pass_num) {
-    int output[20]; // Sufficient capacity
+    int output[20]; 
     int count[2] = {0, 0};
 
     for (int i = 0; i < n; i++) {
