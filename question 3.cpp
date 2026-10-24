@@ -60,7 +60,7 @@ int main() {
 
     radixSortQ3(ids, n);
 
-    // Using a direct index array for frequencies since max 4 digits (up to 9999)
+  
     int freq[10000] = {0};
     for(int i = 0; i < n; i++) {
         freq[ids[i]]++;
