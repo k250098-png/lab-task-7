@@ -19,7 +19,7 @@ void alternateSort(int arr[], int low, int high, int level, int& subarrays) {
     if (low >= high) return;
 
     if (level % 2 != 0) {
-        // Odd Level: Quick Sort Partition
+       
         int pivot = arr[high];
         int i = low - 1;
         for (int j = low; j < high; ++j) {
@@ -41,7 +41,7 @@ void alternateSort(int arr[], int low, int high, int level, int& subarrays) {
         alternateSort(arr, low, pivot_idx - 1, level + 1, subarrays);
         alternateSort(arr, pivot_idx + 1, high, level + 1, subarrays);
     } else {
-        // Even Level: Merge Sort Division
+       
         int mid = low + (high - low) / 2;
         subarrays += 2;
         
